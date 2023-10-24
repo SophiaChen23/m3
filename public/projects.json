@@ -1,0 +1,24 @@
+[
+  {
+    "id": 1,
+    "image": "assets/1.png",
+    "projectDescription": "To go shopping",
+    "codeLink": "https://github.com/SophiaChen23/project-1",
+    "demoLink": "https://demo.project1.com"
+  },
+  {
+    "id": 2,
+    "image": "assets/2.png",
+    "projectDescription": "TODO List",
+    "codeLink": "https://github.com/SophiaChen23/homework",
+    "demoLink": "https://demo.project2.com"
+  },
+  {
+    "id": 3,
+    "image": "assets/3.png",
+    "projectDescription": "personal blog",
+    "codeLink": "https://github.com/SophiaChen23/classExercise-Lab",
+    "demoLink": "https://demo.project2.com"
+  }
+
+]

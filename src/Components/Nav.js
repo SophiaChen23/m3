@@ -29,9 +29,9 @@ function Nav({themeSetter,theme}) {
     return (
         <div className="header">
             <div className="logo-nav">
-                
-                <a className='left-logo' href="#home" onClick={()=>{closeMenu();navigate("#home")}}>Pranavdhar</a>
-                
+
+                <a className='left-logo' href="#home" onClick={()=>{closeMenu();navigate("#home")}}>Sophia</a>
+
                 <div className='right-navigations'>
 
                     <div className={menutoggle? "nav-options active" : "nav-options"}>
@@ -45,8 +45,8 @@ function Nav({themeSetter,theme}) {
 
                     <div className='theme-toggle'>
                     {
-                        theme === "light" 
-                        ? 
+                        theme === "light"
+                        ?
                         <NightsStayIcon onClick={themeSetter} className='theme-toggle' style={{ fontSize: 40}}/>
                         :
                         <WbSunnyIcon onClick={themeSetter} className='theme-toggle' style={{ fontSize: 40}}/>
@@ -58,13 +58,13 @@ function Nav({themeSetter,theme}) {
             <div className="mobile-nav">
                 <div className='mobile-menu'>
                     {
-                        theme === "light" 
-                        ? 
+                        theme === "light"
+                        ?
                         <NightsStayIcon onClick={themeSetter} className='theme-toggle' style={{ fontSize: 40}}/>
                         :
                         <WbSunnyIcon onClick={themeSetter} className='theme-toggle' style={{ fontSize: 40}}/>
                     }
-                    
+
                     <div onClick={() =>{Toggle()}}>
                         {menutoggle ? (
                             <ClearIcon className="menu-icon" style={{ fontSize: 40}}/>

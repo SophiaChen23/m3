@@ -10,7 +10,7 @@ function BlogCard({coverimage,category,title,descriptionpart}) {
                         <h4 className="post-category">{category}</h4>
                         <h3 className="post-title">{title}</h3>
                         <p className="post-description">{descriptionpart}...</p>
-                        <p className="post-author">By N.S.Pranavdhar</p>
+                        <p className="post-author">By Sophia</p>
                     </div>
                 </div>
         </div>

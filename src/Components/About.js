@@ -7,15 +7,12 @@ function About() {
       <h2 className="about-title">About</h2>
       <div className="about-data">
         <div className="about-img">
-          <img src="assets/about.jpeg" alt="" />
+          <img src="assets/home.jpeg" alt="" />
         </div>
         <div>
-          <h2 className="about-subtitle">I'am Pranavdhar</h2>
+          <h2 className="about-subtitle">I'am Sophia</h2>
           <p className="about-text">
-            studying my first year in computer science engineering at Amrita University, Amritapuri located in India. I am a member at amfoss -
-            a student developer club.I am an ambitious computer science engineer, an open-source enthusiast, and a curious person to learn new things every day and
-            improve myself. I am always ready to have new experiences, meet new people and learn new things. I find the idea of creating value for people and impacting
-            the world through my work delightful.
+           Focus on the programming and coding
                     </p>
           <p><b>Languages and tools known:</b> </p>
           <p>
