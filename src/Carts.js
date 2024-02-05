@@ -2,55 +2,35 @@ import React, {useEffect, useState} from 'react';
 import jsonData from "./data.json";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faCircleMinus, faCirclePlus} from "@fortawesome/free-solid-svg-icons";
+import Nav from "./Nav";
 
 
 
 
-function Carts() {
-    const [data, setData] = useState([]);
-    const [total, setTotal] = useState(0);
-    const [lightboxItem, setLightboxItem] = useState(null);
-
+function Carts(props) {
+    const { data, total} = props;
     useEffect(() => {
         // Set the initial state using imported jsonData
-        setData(jsonData);
+        // setData(jsonData);
     }, []);
+    const [lightboxItem, setLightboxItem] = useState(null);
 
     const openLightbox = (item) => {
         setLightboxItem(item);
     };
 
-    // Function to close the lightbox
+    // // Function to close the lightbox
     const closeLightbox = () => {
         setLightboxItem(null);
     };
 
-    const addValue = (id) => {
-        setData((prevData) =>
-            prevData.map((item) =>
-                item.id === id ? { ...item, value: item.value + 1 } : item
-            )
-        );
-    };
-    useEffect(() => {
-        // Calculate the total sum of all item values
-        const sum = data.reduce((accumulator, item) => accumulator + item.value, 0);
-        setTotal(sum);
-    }, [data]);
-
-
-    const minusValue = (id) => {
-        setData((prevData) =>
-            prevData.map((item) =>
-                item.id === id && item.value >0 ? { ...item, value: item.value - 1 } : item
-            )
-        );
-    };
 
 
     return (
         <div className="Home">
+            <Nav data={data} total={total} lightboxItem={lightboxItem} />
             <ul className="self-define">
+
                 {data.map((item) => (
                     <li key = {item.id} >
                         <strong style={{ display: 'block' }}>{item.desc}</strong>
