@@ -36,3 +36,4 @@ vendor/
 *.json
 *.ldif
 *.csv
+node_modules/.cache
