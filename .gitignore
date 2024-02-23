@@ -24,6 +24,8 @@ ENV.bak/
 lib/
 vendor/
 *.gem
+/.cache
+.cache
 
 # Logs and databases #
 ######################
