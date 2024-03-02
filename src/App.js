@@ -3,6 +3,63 @@ import List from "./Lists";
 import CreateList from "./CreateList";
 import UpdateList from "./UpdateList";
 import DeleteList  from "./DeleteList";
+const express = require('express');
+const mongoose = require('mongoose');
+const bodyParser = require('body-parser');
+
+const app = express();
+const PORT = process.env.PORT || 5000;
+
+app.use(bodyParser.json());
+
+
+const mongoose = require('mongoose');
+
+
+mongoose.connect('mongoDb', { useNewUrlParser: true, useUnifiedTopology: true });
+
+const db = mongoose.connection;
+db.on('error', console.error.bind(console, 'connection error:'));
+db.once('open', function() {
+    console.log("Connected successfully to MongoDB");
+});
+
+
+const bookSchema = new mongoose.Schema({
+    id: { type: Number, required: true, unique: true },
+    title: { type: String, required: true },
+    author: { type: String, required: true },
+});
+
+
+const Book = mongoose.model('Book', bookSchema);
+
+
+app.get('/posts', async (req, res) => {
+    try {
+        const posts = await Post.find();
+        res.json(posts);
+    } catch (error) {
+        res.status(500).send(error);
+    }
+});
+
+app.post('/posts', async (req, res) => {
+    try {
+        const newPost = new Post(req.body);
+        await newPost.save();
+        res.status(201).json(newPost);
+    } catch (error) {
+        res.status(400).send(error);
+    }
+});
+
+
+
+app.listen(PORT, () => {
+    console.log(`Server running on port ${PORT}`);
+});
+
 class App extends React.Component {
   constructor(props) {
     super(props);
