@@ -1,0 +1,313 @@
+main{
+    padding: 40px 10px;
+    background-color: #0ABAB5 ;
+    height: 1000px;
+
+}
+.listening-reg h1 {
+    text-align:center;
+    margin: 0 0 2rem;
+}
+/* css for registration form and erros */
+
+.form-registration {
+    max-width:330px;
+    padding:15px;
+    margin: 0 auto;
+}
+.form-registration{
+    display:flex;
+    flex-wrap:wrap;
+}
+.form-registration input{
+    width:100%;
+    /*flex-basis: 48%;*/
+    margin: 0px 0 10px;
+}
+.form-registration .btn{
+    flex: 1 0 100%;
+}
+.my-errors{
+    margin:0 auto;
+    padding: 0;
+    list-style: none;
+    color: #333;
+    font-size:1.2rem;
+    display: table;
+}
+.my-errors li {
+    margin: 0 0 1rem;
+}
+.my-errors li:before {
+    content: " ! ERROR : ";
+    color: #f00;
+    font-weight:bold;
+}
+
+/*styles for listing tables*/
+.listing-table {
+    width: 60%;
+    margin-left:0px;
+    vertical-align: middle;
+}
+.listing-table th{
+    vertical-align: middle;
+    background: black;
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+    border-bottom: 1px solid #666;
+}
+.listing-table td {
+    vertical-align: middle;
+    background: white;
+    color: black;
+    font-weight: bold;
+    padding: 30px;
+    border-bottom: 1px solid #666;
+}
+
+.listing-table td,
+.listing-table th {
+    border-right: 1px solid #666;
+}
+
+
+/* Variables */
+/* Nest Main */
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+nav ul li {
+    align-items: center;
+    left: 10px;
+    margin-left: 20px;
+}
+/*nav ul li:not(:last-child) {*/
+/*    margin-right: 10px;*/
+/*}*/
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+}
+nav ul li a:hover {
+    text-decoration: underline;
+}
+/*nav ul li:last-child {*/
+/*    margin-left: 700px;*/
+/*}*/
+
+nav ul li:first-child {
+    margin-left: 90px;
+}
+
+body {
+    width: 2600px;
+    left: 5%;
+    background-color: #0ABAB5 ;;
+    height: 640px;
+    color: black;
+}
+body hearder {
+    color: red;
+}
+body #intro-container {
+    display: flex;
+}
+body #intro-container #intro-text {
+    background-color: #AED6F1 ;
+    border: 12px solid white;
+    height: 800px;
+    width: 23%;
+    left: 1%;
+    top: 10%;
+    position: relative;
+    color: black;
+    flex-direction: column;
+    align-items: center;
+}
+body #intro-container #intro-text .submit-buttton {
+    background-color:#3498DB ;
+    color: white;
+    border: 0;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 9em;
+    height: 2.5em;
+    font-size: 0.8rem;
+    font-weight: bold;
+    position: relative;
+    top: 36%;
+    left: 40%;
+    transform: translate(-50%, -120%);
+}
+body #intro-container #intro-text span {
+    font-family: "Sacramento", cursive;
+    position: relative;
+    top: 20%;
+    left: 32%;
+    right:29%;
+    font-size: 2rem;
+}
+body #intro-container #intro-text h3 {
+    font-family: Arial, Helvetica, Sans-Serif;
+    position: relative;
+    top: 22%;
+    left: 24%;
+    font-size: 16px;
+    font-style: italic;
+
+}
+body #intro-container #intro-text p {
+    font-family: serif;
+    position: relative;
+    top: 22%;
+    left: 2%;
+    font-size: 16px;
+
+}
+body #intro-container #intro-text span {
+    font-family: "Sacramento", cursive;
+    position: relative;
+    top: 20%;
+    left: 32%;
+    right:29%;
+    font-size: 2rem;
+}
+body #intro-container #intro-text h3 {
+    font-family: Arial, Helvetica, Sans-Serif;
+    position: relative;
+    top: 22%;
+    left: 28%;
+    font-size: 16px;
+    font-style: italic;
+
+}
+body #intro-container #intro-text p {
+    font-family: serif;
+    position: relative;
+    top: 22%;
+    left: 2%;
+    font-size: 16px;
+
+}
+body #intro-container #intro-image {
+    background-color:white;
+    border: 12px solid white;
+    height: 800px;
+    position: relative;
+    width: 25%;
+}
+.post-image {
+    max-width: 30%; /* Ensure the image doesn't exceed its container's width */
+    /*height: auto; !* Maintain the image's aspect ratio *!*/
+    /* You can set specific width and height values if needed */
+}
+body #intro-container #intro-image img {
+    max-width: 1200px;
+    height: 600px;
+    height: 99.5%;
+    width:100.2%;
+}
+
+/*# sourceMappingURL=styles1.css.map */
+ul.error-list {
+    list-style: none; /* Remove the default bullet points */
+    text-align: center; /* Center-align the list items */
+}
+
+footer {
+    position: relative;
+    bottom: -20px; /* Adjust the distance from the bottom */
+    left: 60px; /* Adjust the distance from the right */
+    text-align: left;
+}
+.pig{
+    text-align: center;
+    font-weight: bold;
+    margin-top: 80px;
+    /* Add any other styles you want for the heading here */
+}
+.cat{
+    margin-top: 40px;
+}
+.my-footer-container {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #5DADE2 ; /* You can adjust the background color as needed */
+    color: white; /* Text color */
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
+    left: 0;
+
+}
+
+
+/* Center the content in the body.my-special-class */
+section.news {
+    margin-top: 20px;
+    margin-bottom: 50px;
+    max-width: 1000px;
+    height: 1000px;
+    /*display: flex;*/
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    /*height: 120vh; !* Optionally, make the content fill the entire viewport height *!*/
+}
+
+/* Add spacing between each blog post */
+.post-container {
+    margin-bottom: 20px; /* Adjust the margin as needed */
+}
+
+
+/* Style h2 elements within the "news" section */
+section.news h2 {
+    font-size: 24px; /* Example font size */
+    color: white; /* Example text color */
+    /* Add more styles for h2 elements as needed */
+}
+
+/* Style p elements within the "news" section */
+section.news p {
+    font-size: 16px; /* Example font size */
+    line-height: 1.5; /* Example line height */
+    /* Add more styles for p elements as needed */
+}
+
+/* Style images within the "news" section */
+section.news img {
+    max-width: 100%; /* Example maximum width */
+    height: auto; /* Maintain the image's aspect ratio */
+
+}
+/* Style Edit and Delete buttons */
+a.edit-button,
+a.delete-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #007bff; /* Button background color */
+    color: #fff; /* Button text color */
+    text-decoration: none;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+/* Hover effect for Edit and Delete buttons */
+a.edit-button:hover,
+a.delete-button:hover {
+    background-color: #0056b3; /* New background color on hover */
+}
